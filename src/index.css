@@ -1,0 +1,176 @@
+html, body { /* csslint allow: order-alphabetical */
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+body { /* csslint allow: order-alphabetical */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code { /* csslint allow: order-alphabetical */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root { /* csslint allow: order-alphabetical, ids */
+	height: 100%;	
+}
+
+/* APP */
+
+.app { /* csslint allow: order-alphabetical, ids */
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/* HEADER */
+
+header { /* csslint allow: order-alphabetical */
+	background: skyblue;
+}
+
+/* MAIN */
+
+main { /* csslint allow: order-alphabetical */
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	flex: 1 1 auto;
+	/*overflow: hidden;*/
+}
+
+.tab { /* csslint allow: order-alphabetical */
+	display: flex;
+	flex-direction: column;
+	background: dimgrey;
+	min-height: 48px;
+}
+
+.active { /* csslint allow: order-alphabetical */
+	flex: 1 1 auto;
+	background: white;
+}
+
+.inactive {
+	flex: 0 1 auto;
+}
+
+.tab button { /* csslint allow: order-alphabetical */
+	box-sizing: border-box;
+	width: 100%;
+	height: 48px;
+	padding: 0;
+	border: thin solid grey; /* csslint allow: box-model */
+	border-radius: 0;
+}
+
+.inactive button:hover { /* csslint allow: order-alphabetical */
+	background: darkgrey;
+	color: white;
+}
+
+.tab-content { /* csslint allow: order-alphabetical */
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: auto;
+}
+
+.active .tab-content { /* csslint allow: order-alphabetical */
+	visibility: visible;
+}
+
+.inactive .tab-content, .inactive .tab-content * { /* csslint allow: order-alphabetical */
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	height: 0;
+}
+
+.bio { /* csslint allow: order-alphabetical */
+	padding: 10px;
+}
+
+/* FOOTER */
+
+.footer { /* csslint allow: order-alphabetical */
+	display: flex;
+	background: wheat;
+}
+
+.partition { /* csslint allow: order-alphabetical */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+	padding: 0 5px;
+	border: thin solid black;
+	background: white;
+}
+
+.external-links { /* csslint allow: order-alphabetical */
+	flex: 2 1 auto;
+}
+
+.contact { /* csslint allow: order-alphabetical */
+	flex: 1 1 auto;
+}
+
+/* MISC */
+
+h1 { /* csslint allow: order-alphabetical */
+	margin: 24px 0;
+	padding: 0 5px;
+	background: white;
+	font-size: 3rem;
+}
+
+h2 { /* csslint allow: order-alphabetical */
+	margin: 5px 0;
+	font-size: 2.4rem;
+}
+
+h3 { /* csslint allow: order-alphabetical */
+	margin: 5px 0;
+	font-size: 1.8rem;
+}
+
+p { /* csslint allow: order-alphabetical */
+	padding: 0 5px;
+	line-height: 2.6rem;
+	font-size: 1.8rem;
+}
+
+hr {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.link-list { /* csslint allow: order-alphabetical */
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.vertical { /* csslint allow: order-alphabetical */
+	flex-direction: column;
+	align-items: stretch;
+	padding: 0 5px;
+}
+
+.link-item { /* csslint allow: order-alphabetical */
+	margin: 0 5px;
+	list-style-type: none;
+}
+
+.link-content { /* csslint allow: order-alphabetical */
+	margin-left: 10px;
+}
